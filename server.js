@@ -7,7 +7,8 @@ const app = express();
 const server = http.createServer(app);
 const io = new Server(server, {
   cors: {
-    origin: ["http://localhost:3000", "http://localhost:3001"], // Allow frontend connections
+    origin: ["http://localhost:3000", "http://localhost:3001", "https://driver-app-lac.vercel.app",
+    "https://admin-app-psi-five.vercel.app"], 
     methods: ["GET", "POST"],
   },
 });
